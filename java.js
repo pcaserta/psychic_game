@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Document</title>
-</head>
-<body>
-    <H1>Psychic game</H1>
-    <p>Guess what letter I am thinking of</p>
-    <p id="Wins-text"> Wins:</p>
-     
-    <p id="losses-text">Losses:</p>
-    
-    <p id="guesses-left"> Guesses Left:</p>
-   
-    <p id="user-guesses"> Your Guesses so far:</p>
-
-    <script type="text/javascript">
-    // Variable for the computers choices //
+// Variable for the computers choices //
 var computerchoice = ['a','b','c','d','e','f','g','h','i','j','k','l',
     'm','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
@@ -44,8 +23,8 @@ var userGuess = event.key;
 
 //randomly chooses a letter of the alphabet from array//
 
-var computerguess = computerchoice[Math.floor(math.random() * computerchoice.length)];
-console.log(computerchoice)
+var computerguess = computerchoice[Math.floor](math.random() * computerchoice.length)];
+
 //this if statment determines what happens if we guess the computer choice or not//
                                 {
 if (userGuess = computerguess) {
@@ -60,10 +39,11 @@ if (userGuess = computerguess) {
 
 winsText.textContent = "Wins: " + wins;
 lossestext.textContent = "Losses: " + losses;
-guessestext.textContent = "Guesses left: " + guesses_left;
+guessestext.textContent = "Guesses left: " + guesses_left
 }
 
 }
-</script>
-</body>
-</html>
+
+
+
+    
