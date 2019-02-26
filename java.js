@@ -39,19 +39,24 @@ if(userGuess === computerguess){
     wins++ 
     guesses_left = 9
     yourguesses = []
-    
+    reset()
 }
 if (guesses_left === 0) {
 losses++
 guesses_left = 9
 yourguesses = []
-
+reset()
 
 } else {
  guesses_left--
  yourguesses.push(userGuess)
 }
 
+function reset() {
+	computerguess = computerchoice[Math.floor(Math.random() * computerchoice.length)];
+console.log(computerguess)
+	
+}
 //display wins, losses, guesses, and guesses left//
 
 winsText.textContent = "Wins: " + wins;
