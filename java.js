@@ -29,7 +29,7 @@ document.onkeyup = function(event) {
  //determines which key was pressed//
 
 var userGuess = event.key;
-console.log(userGuess)
+
 
 
 
@@ -37,24 +37,26 @@ console.log(userGuess)
                              { 
 if(userGuess === computerguess){
     wins++ 
-    guesses_left = 9
-    yourguesses = []
     reset()
+    
+    
 }
-if (guesses_left === 0) {
+else if (guesses_left === 0) {
 losses++
-guesses_left = 9
-yourguesses = []
 reset()
 
-} else {
+
+
+} else  {
  guesses_left--
  yourguesses.push(userGuess)
 }
 
 function reset() {
 	computerguess = computerchoice[Math.floor(Math.random() * computerchoice.length)];
-console.log(computerguess)
+console.log(computerguess);
+guesses_left = 9
+yourguesses = []
 	
 }
 //display wins, losses, guesses, and guesses left//
